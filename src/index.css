@@ -1,0 +1,155 @@
+:root{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: rgb(255, 90, 60);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.textbox{
+    background-color: rgb(255, 171, 156);
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.textbox input, .textbox button{
+    border: 0px;
+    background-color: rgb(255, 171, 156);
+    color: rgb(255, 90, 60);
+    padding: 15px;
+}
+
+.textbox input{
+    color: white;
+}
+
+.textbox input:focus{
+    outline: none;
+}
+
+.textbox input::placeholder{
+    color: rgb(255, 90, 60);
+    font-size: 18px;
+}
+
+.textbox button{
+    font-size: 35px;
+    padding: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+ul{
+    list-style: none;
+    width: 350px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li{
+    font-size: 18px;
+    color: white;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+.controls{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+}
+
+.counter button{
+    width: 30px;
+    height: 30px;
+    background-color: none;
+    border: 0px;
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 90, 60);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.counter p{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 90, 60);;
+}
+
+.controls button{
+    background-color: white;
+    border: 0px;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.decrement{
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px; 
+}
+
+.increment{
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px; 
+}
+
+.crossed-out{
+    text-decoration: line-through;
+}
+
+button{
+    transition: 0.2s ease-in;
+}
+
+button:hover{
+    background-color: rgb(255, 171, 156);
+    transition: 0.2s ease;
+}
+
+.total{
+    width: 350px;
+    display: flex;
+    justify-content: right;
+}
+
+.total p{
+    color: white;
+    font-size: 20px;
+}
