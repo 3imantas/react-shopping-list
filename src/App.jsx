@@ -11,6 +11,7 @@ function App() {
 	const [checkbox, setCheckbox] = useState([]);
 
 	const handleChange = (event) => {
+		if(text.length === 15) return;
 		setText(event.target.value);
 	};
 	
